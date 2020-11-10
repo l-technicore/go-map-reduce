@@ -5,7 +5,7 @@ A golang master naode distributing sub-task to golang slave nodes for processing
 1. Run any number of slaves by executiong:
    - **go run slave.go -master "0.0.0.0:8100"**
 2. Run only one master. (also reads and dispatches jobs for **list_of_strings.txt** file containing unsorted names)
-   - **go run master.go -port "8100"**
+   - **go run master.go -port "8100" -file "list_of_strings.txt"**
 
 ## What's going on in there?
 **slave.go** runs the slave node, which keeps on trying to connect the master node specified using the -master flag. There can be any number of slave nodes connected to the master node. But there is only one master.
