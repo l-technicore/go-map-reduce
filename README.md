@@ -7,7 +7,7 @@ Distributing task to golang nodes for processing
 2. Run only one master. (also reads and dispatches jobs for list_of_strings.txt file containing unsorted names)
    - go run master.go -port "8100"
 
-## Whtat's going on in there?
+## What's going on in there?
 slave.go runs the slave node, which keeps on trying to connect the master node specified using the -master flag. There can be any number of slave nodes connected to the master node. But there is only one master.
 
 In case a slave node dies the task it was performing is given to some other still connected slave node. Slave nodes can be added or removed at any time. But there should be atleast one slave node active for the sort job to be done else the job execution will pause until one slave is available (excluding the master).
