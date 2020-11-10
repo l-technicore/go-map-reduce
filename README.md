@@ -1,5 +1,5 @@
 # go-map-reduce
-Distributing task to golang nodes for processing
+A golang master naode distributing sub-task to golang slave nodes for processing and then combining sub-results to provide the final result.
 
 ## How to run?
 1. Run any number of slaves by executiong:
