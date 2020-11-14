@@ -1,5 +1,5 @@
 # go-map-reduce
-A golang master naode distributing sub-task to golang slave nodes for processing and then combining sub-results to provide the final result.
+A golang master node distributing sub-task to golang slave nodes for processing and then combining sub-results to provide the final result.
 
 ## How to run?
 1. Run any number of slaves by executiong:
@@ -15,3 +15,5 @@ In case a slave node dies the task it was performing is given to some other stil
 **master.go** reads list of 1000 names from the "list_of_strings.txt" file in the same directory after 3 secons from the start of execution. It then distributes the equally divided chunks of the original list to all the connected slave nodes in JSON format over TCP.
 
 This JSON is read by the slave node through the TCP connection they have to the master node, sorting fot the same is done after unmarshal and then the result is sent back to the master through the TCP connection as well.
+
+* Added testing script for some functionalities in master.go
