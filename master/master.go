@@ -1,7 +1,7 @@
 package main
 
 /***************************************************************************************************
- * Author	: Lalit Kumar Singh(lalitkumarsingh@gmali.com)
+ * Author	: Lalit Kumar Singh(lalitkumarsingh@gmail.com)
  * Description	: This GO file contains code for a master node responsible for providing a
  *					 distributed map reduce functionality.
  * Debugging hours wasted : nil
